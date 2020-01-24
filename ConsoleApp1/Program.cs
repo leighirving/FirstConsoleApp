@@ -154,15 +154,15 @@ namespace Project01_Introduction
 
             if ((x > y) && (x > z))
             {
-                Console.WriteLine(x);
+                Console.WriteLine("The largest input was " + x);
             }
             else if ((y > x) && (y > z))
             {
-                Console.WriteLine(y);
+                Console.WriteLine("The largest input was " + y);
             }
             else
             {
-                Console.WriteLine(z);
+                Console.WriteLine("The largest input was " + z);
             }
 
 
@@ -250,7 +250,19 @@ namespace Project01_Introduction
             // *****
 
             // Write your code here
+            Console.WriteLine("Please provide input n to display pattern:");
 
+            int t = Convert.ToInt32(Console.ReadLine());
+
+            int itr2 = 1;
+            while (t > 0)
+            {
+                string tabs2 = new String(' ', t-1) + new String('*', itr2);
+
+                Console.WriteLine(tabs2);
+                itr2 += 1;
+                t -= 1;
+            }
 
 
 
