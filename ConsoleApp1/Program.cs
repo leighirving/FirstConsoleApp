@@ -70,6 +70,19 @@ namespace Project01_Introduction
             */
 
 
+            Console.WriteLine("Length of side 1:");
+            string s1 = Console.ReadLine();
+            int a = Convert.ToInt32(s1);
+
+            Console.WriteLine("Length of side 2:");
+            string s2 = Console.ReadLine();
+            int b = Convert.ToInt32(s2);
+
+
+            Console.WriteLine("Length of side 3:");
+            string s3 = Console.ReadLine();
+            int c = Convert.ToInt32(s3);
+
 
 
             double Area(int a, int b, int c)
@@ -79,8 +92,7 @@ namespace Project01_Introduction
                 return Area;
             }
 
-            double triArea = Area(3, 4, 5);
-            Console.WriteLine("Area is " + triArea);
+            Console.WriteLine("Area is " + Area(a,b,c));
 
 
 
@@ -278,12 +290,12 @@ namespace Project01_Introduction
             // Write your code here
 
             Console.WriteLine("Please provide input n to return the sum of first n natural numbers:");
-            decimal u = Convert.ToDecimal(Console.ReadLine());
+            int u = Convert.ToInt32(Console.ReadLine());
 
 
-            decimal natNum(int u)
+            int natNum(int u)
             {
-                decimal sum = 0;
+                int sum = 0;
 
                 while (u > 0)
                 {
@@ -295,7 +307,7 @@ namespace Project01_Introduction
                 return sum;
             }
 
-            natNum(5);
+            Console.WriteLine(natNum(u));
 
 
 
