@@ -210,7 +210,7 @@ namespace Project01_Introduction
 
             }
 
-            Console.WriteLine("The sum of first" + v + "natural numbers is " + sum);
+            Console.WriteLine("The sum of first n natural numbers is " + sum);
 
 
             // Exercise 5
@@ -226,14 +226,15 @@ namespace Project01_Introduction
             // Write your code here
             Console.WriteLine("Please provide input n to display pattern:");
 
-            decimal w = Convert.ToDecimal(Console.ReadLine());
+            int w = Convert.ToInt32(Console.ReadLine());
 
-            //decimal sum = 0;
-
-            while (w > 0)
+            int itr = 1;
+            while (itr <= w)
             {
-                Console.WriteLine("*");
+                string tabs = new String('*', itr);
 
+                Console.WriteLine(tabs);
+                itr += 1;
             }
 
 
