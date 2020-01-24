@@ -325,6 +325,15 @@ namespace Project01_Introduction
             // Enter n numbers in an array and print all the even numbers.
 
             // Write your code here
+            decimal[] numbers = new decimal[] { 100.0M, 234532, 2443245.1M, 123443 };
+
+            foreach (decimal j in numbers)
+            {
+                if (j % 2 == 0)
+                {
+                    Console.WriteLine(j);
+                }          
+            }
 
 
 
