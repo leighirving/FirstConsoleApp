@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Project01_Introduction
 {
@@ -341,6 +342,20 @@ namespace Project01_Introduction
             // Enter n numbers in an array and find the highest and the smallest number.
 
             // Write your code here
+            Console.WriteLine("How many numbers would you like to compare?");
+            int ans = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter numbers:");
+
+            decimal[] answer = new decimal[ans];
+            for (int i = 0; i < answer.Length; i++)
+            {
+                answer[i] = Convert.ToDecimal(Console.ReadLine());
+            }
+
+            Console.WriteLine("The highest number is: " + answer.Max());
+            Console.WriteLine("The smallest number is: " + answer.Min());
+
 
         }
 
